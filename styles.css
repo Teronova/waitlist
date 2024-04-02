@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+header, footer {
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    height: 70px;
+    margin: 0;
+    width: 100vw;
+}
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+footer {
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 60px;
+}
+
+main {
+    margin-top: 70px;
+    display: flex;
+    min-height: calc(100vh - 130px);
+    width: 100%;
+}
+
+.left-column p {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+.teronova {
+    height: 80%;
+    margin-top: 6px;
+}
+
+.left-column, .right-column {
+    background-color: #FEF3FF;
+    padding: 2%;
+    max-width: 50%;
+    width: 50%;
+}
+
+
+.right-column {
+    align-items: center;
+    background-image: url('images/map.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+
+.waitlist {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    min-height: 400px;
+    margin: 20px auto;
+    padding: 30px 20px 20px;
+    width: 300px;
+
+    /* Vertically center the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+.giants {
+    width: 100%;
+}
+
+
+
+
+.footer-div {
+    flex: auto;
+    overflow-x: hidden;
+}
+
+
+/* Not 2 columns, but 2 rows when screen is small */
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        max-width: 100%;
+        width: 100%;
+    }
+    i {
+        display: none;
+    }
+}
